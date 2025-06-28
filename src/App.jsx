@@ -4,7 +4,7 @@ import { useLocalStorage } from "./useLocalStorage";
 const importantFiveTasks = [
   {
     id: 1,
-    task: "Run 4 kilometers",
+    task: "Run 6 kilometers",
   },
   {
     id: 2,
@@ -43,11 +43,11 @@ function App() {
   console.log(wins);
 
   return (
-    <div className='flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover h-dvh vignette bg-[url(./assets/focus.png)]'>
-      <div className='p-10 rounded-3xl bg-slate-50  shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] flex flex-col '>
+    <div className="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover h-dvh vignette bg-[url(./assets/focus.png)]">
+      <div className="p-10 rounded-3xl bg-slate-50  shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] flex flex-col ">
         {importantFiveTasks.map((task) => (
-          <div className='p-4 text-lg' key={task.id}>
-            <p className='inline-block cursor-default'>{task.task}</p>
+          <div className="p-4 text-lg" key={task.id}>
+            <p className="inline-block cursor-default">{task.task}</p>
           </div>
         ))}
 
